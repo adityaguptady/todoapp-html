@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>To-do App</title>
+        <script src="todo.js">
+            
+        </script>
+        <style>
+            .filterStyle
+            {
+                background-color: gray;
+                margin: 10;
+                padding: 5;
+            }
+            #todoBodyStyle
+            {
+                margin: 15px
+            }
+            #filterBodyStyle
+            {
+                margin: 7px
+            }
+            #listElementStyle
+            {
+                background-color: bisque;
+                margin: 10;
+                padding: 5;
+            }
+            #listElementStyleCompleted
+            {
+                background-color: greenyellow;
+                border-radius: 10;
+                margin: 10;
+                padding: 5;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Todo App</h2>
+            <div id="filterBodyStyle">
+                <label class="filterStyle" onclick="filterTodo('incomplete')">Incomplete &nbsp&nbsp</label>
+                <label onclick="filterTodo('complete')">Completed &nbsp&nbsp</label>
+                <label onclick="filterTodo('all')">All &nbsp&nbsp</label>
+            </div>
+            <div id="todoBodyStyle">
+                <button onclick="updateFrontend()">Mock</button>
+                <input id="todoInput" type="text"/>
+                <button onclick="addTodo()">Add new Todo</button>
+                <ul id="todoList">
+                    <!-- <li>
+                        <input type="checkbox" onchange="onCheckedChange()"/>
+                        Todo 1 
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
